@@ -403,6 +403,6 @@ export default (program: any) => {
         throw new Error('Could not infer SDK version, please run with `--sdkVersion SDK_VERSION`');
       }
 
-      await action({ sdkVersion, ...options });
+      await action({ ...options, sdkVersion });
     });
 };
